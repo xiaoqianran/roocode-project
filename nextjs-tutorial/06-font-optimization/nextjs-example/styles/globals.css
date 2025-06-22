@@ -1,0 +1,28 @@
+:root {
+  --font-inter: var(--font-inter);
+  --font-roboto-mono: var(--font-roboto-mono);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-inter), sans-serif; /* 使用 CSS 变量 */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-sans {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-roboto-mono), monospace;
+}

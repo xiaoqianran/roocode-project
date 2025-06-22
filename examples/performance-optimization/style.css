@@ -1,0 +1,73 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+.example-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.example-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.optimization-card {
+    border: 1px solid #cce5ff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #e7f5ff;
+}
+
+.optimization-card h3, .optimization-card h4 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.optimization-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.optimization-card button:hover {
+    background-color: #0056b3;
+}
+
+.optimization-card input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.lazy-component-card {
+    border: 1px dashed #28a745;
+    background-color: #d4edda;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #155724;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 模块 7: 组件化</title>
+    <!-- 引入 Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        #app {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 700px;
+            width: 90%;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .component-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        .component-section h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        .my-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .my-button.primary { background-color: #007bff; }
+        .my-button.primary:hover { background-color: #0056b3; }
+        .my-button.success { background-color: #28a745; }
+        .my-button.success:hover { background-color: #218838; }
+        .my-button.danger { background-color: #dc3545; }
+        .my-button.danger:hover { background-color: #c82333; }
+
+        .my-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        .my-card h4 {
+            margin-top: 0;
+            color: #666;
+        }
+        .my-card p {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- Vue 将在这里渲染内容 -->
+    </div>
+
+    <!-- 引入 Vue 应用的 JavaScript 文件 -->
+    <script src="components/MyButton.js"></script>
+    <script src="components/MyCard.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
